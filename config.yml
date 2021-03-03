@@ -1,5 +1,9 @@
 news_sites:
   infobae:
     url: https://www.infobae.com/
+    queries:
+      homepage_article_links: '.headline-title a'
   reuters:
     url: https://www.reuters.com/
+    queries:
+      homepage_article_links: '.story-title a'

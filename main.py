@@ -1,5 +1,6 @@
 import argparse
 from common import config
+from news_page import HomePage
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
@@ -11,4 +12,5 @@ if __name__ == '__main__':
                       type=str,
                       choices=news_sites_choises)
   args = parser.parse_args()
-  print(config()['news_sites'][args.news_site]['url'])
+  for title in HomePage(args.news_site ,config()['news_sites'][args.news_site]['url']).article_links:
+    print(title)
