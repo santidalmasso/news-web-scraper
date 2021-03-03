@@ -3,7 +3,11 @@ news_sites:
     url: https://www.infobae.com/
     queries:
       homepage_article_links: '.headline-title a'
+      article_title: '.article-headline'
+      article_body: '.nd-body-article'
   reuters:
     url: https://www.reuters.com/
     queries:
       homepage_article_links: '.story-title a'
+      article_title: ''
+      article_body: ''
