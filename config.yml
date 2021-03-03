@@ -1,0 +1,5 @@
+news_sites:
+  infobae:
+    url: https://www.infobae.com/
+  reuters:
+    url: https://www.reuters.com/
