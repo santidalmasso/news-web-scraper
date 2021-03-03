@@ -9,5 +9,5 @@ news_sites:
     url: https://www.reuters.com/
     queries:
       homepage_article_links: '.story-title a'
-      article_title: ''
-      article_body: ''
+      article_title: 'h1[class^="Headline-headline"]'
+      article_body: 'p[class^="Paragraph-paragraph"]'
